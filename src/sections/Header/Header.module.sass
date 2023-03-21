@@ -1,0 +1,18 @@
+@import ../../sass/templates
+
+.gridContainer
+	display: grid
+	grid-template-columns: repeat(12, 63px)
+	column-gap: 30px
+	align-items: center
+
+.headerBtn
+	background: #DDE4F7
+	grid-column: 11/14
+	color: #224DCF
+	border: none
+	height: 40px
+	border-radius: 30px
+	@extend %flex-center-center
+	font-size: 17px
+	font-weight: 600

@@ -1,0 +1,32 @@
+// МИКСИНЫ
+=button($background, $color, $scale)
+	background-color: $background
+	color: $color
+	border-radius: 10px
+	padding: 16px 25px
+	border: none
+	transform: scale($scale)
+	text-decoration: none
+	&:hover
+		filter: opacity(90%)
+
+=dimensions-and-align($max-width, $min-height, $margin)
+	max-width: $max-width
+	min-height: $min-height
+	margin: $margin auto
+
+
+=flex-justify-align($justify, $align, $gap)
+	display: flex
+	justify-content: $justify
+	align-items: $align
+	gap: $gap
+
+// ШАБЛОНЫ
+%flex-center-center
+	display: flex
+	justify-content: center
+	align-items: center
+
+%border
+	border: 1px solid black
