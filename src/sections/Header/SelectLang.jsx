@@ -6,15 +6,7 @@ import styles from "./Header.module.css"
 
 const SelectLang = ({onChange, value}) => {
 	return (
-		<div className={styles.selectLang__flex}>
-			<div className={styles.selectLang__flag}>
-				{value === 'eu'
-					?
-					<img src={euImg} alt=""/>
-					:
-					<img src={ruImg} alt=""/>
-				}
-			</div>
+		<div className={styles.selectLang}>
 			<select
 				className={styles.selectLang__select}
 				value={value}
@@ -24,6 +16,14 @@ const SelectLang = ({onChange, value}) => {
 				<option value="eu">Eu</option>
 				<option value="ru">Ru</option>
 			</select>
+			<div className={styles.selectLang__flag}>
+				{value === 'eu'
+					?
+					<img src={euImg} alt=""/>
+					:
+					<img src={ruImg} alt=""/>
+				}
+			</div>
 		</div>
 	);
 };

@@ -514,6 +514,8 @@ const data = {
 			day: "days",
 			hour: "hours",
 			minute: "minutes",
+			heading: "Heading",
+			menu: "Menu",
 		},
 		dateLocale: "en-GB",
 	},
@@ -1030,6 +1032,8 @@ const data = {
 			day: "days",
 			hour: "hours",
 			minute: "minutes",
+			heading: "Заголовок",
+			menu: "Меню",
 		},
 		dateLocale: "ru-RU",
 		

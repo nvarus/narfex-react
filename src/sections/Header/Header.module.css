@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.headerBtn, .selectLang {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.Header {
+  width: 100%;
+  padding: 15px 0px; }
+
+.gridContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+
+.headerBtn {
+  padding: 0 15px;
+  background: #DDE4F7;
+  color: #224DCF;
+  border: none;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer; }
+  .headerBtn:before {
+    content: url("../../4rectangle.svg");
+    margin-right: 5px;
+    display: flex; }
+
+.headerBtnMob {
+  background: white;
+  padding: 0 2%;
+  border: none;
+  height: 40px;
+  display: none;
+  cursor: pointer; }
+  .headerBtnMob:before {
+    content: url("../../4rectangle.svg");
+    margin-right: 5px;
+    display: flex; }
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 15rem;
+  font-size: 1.1rem; }
+  .nav:hover {
+    color: #224DCF; }
+
+.nav a {
+  text-decoration: none;
+  color: #2F323D;
+  letter-spacing: -0.01em; }
+  .nav aa:hover {
+    text-decoration: none;
+    color: #224DCF;
+    font-weight: 600; }
+
+.selectLang {
+  gap: 0.5%; }
+  .selectLang .selectLang__flag {
+    width: 1.7rem;
+    height: 1.7rem;
+    overflow: hidden; }
+  .selectLang .selectLang__flag > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+  .selectLang .selectLang__select {
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    padding: 0.5%; }
+
+.menu {
+  background: #224DCF;
+  color: white;
+  letter-spacing: 0.1em;
+  border: none;
+  width: 70px;
+  height: 26px;
+  border-radius: 6px;
+  display: none;
+  cursor: pointer; }
+
+.menu:hover {
+  color: #DDE4F7;
+  background: #224DCF; }
+
+.PopUpMenu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 5;
+  flex-direction: column;
+  width: 70px;
+  gap: 6px;
+  cursor: pointer; }
+  .PopUpMenu > button {
+    background: #224DCF;
+    border: none;
+    letter-spacing: 0.1em;
+    border-radius: 6px;
+    height: 26px; }
+
+.PopUpMenu__button a {
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  color: white; }
+
+/*----------------------МЕДИА ЗАПРСЫ----------------------- */
+@media only screen and (max-width: 600px) {
+  .headerBtnMob {
+    display: block; }
+
+  .headerBtn {
+    display: none; }
+
+  .nav {
+    display: none; }
+
+  .menu {
+    display: block; } }
