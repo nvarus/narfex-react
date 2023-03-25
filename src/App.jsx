@@ -4,6 +4,7 @@ import {Routes, Route} from "react-router-dom";
 import Header from "./sections/Header/Header.jsx";
 import Home from "./sections/Home/Home.jsx";
 import Gallery from "./sections/Gallery/Gallery.jsx";
+import CreatePost from "./sections/CreatePost/CreatePost.jsx";
 
 const App = ({data}) => {  // data - весь объект, включающий все языки
 	
@@ -19,7 +20,7 @@ const App = ({data}) => {  // data - весь объект, включающий
 		setChangeLocal(data[select])
 	}
 	
-	
+	const [IDCard, setIDCard] = useState('');
 	return (
 		<div className="App">
 			<Header
@@ -29,8 +30,9 @@ const App = ({data}) => {  // data - весь объект, включающий
 			/>
 			
 			<Routes>
-				<Route path="/" element={<Home data={changeLocal}/>}/>
+				<Route path="/" element={<Home setID={setIDCard} data={changeLocal}/>}/>
 				<Route path="/gallery" element={<Gallery/>}/>
+				<Route path="/createPost" element={<CreatePost/>}/>
 			</Routes>
 		</div>
 	);

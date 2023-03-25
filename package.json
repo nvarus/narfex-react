@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.36.0",
     "react-router-dom": "^6.9.0",
     "react-router-link": "^2.0.2"
   }

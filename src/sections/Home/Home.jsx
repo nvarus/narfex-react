@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Home.module.css';
+import Hero from "./Hero/Hero.jsx";
 
-const Home = (props) => {
+const Home = ({data, setID}) => {
 	return (
 		<div className={styles.Home}>
-		HOME
+		<Hero setID={setID} data={data}/>
 		</div>
 	);
 };

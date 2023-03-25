@@ -5,6 +5,7 @@ import logo from "../../logo.svg"
 import Nav from "./Nav.jsx";
 import SelectLang from "./SelectLang.jsx";
 import PopUpMenu from "./PopUpMenu.jsx";
+import {Link} from "react-router-dom";
 
 const Header = ({data, onChange, value}) => {
 	
@@ -19,7 +20,7 @@ const Header = ({data, onChange, value}) => {
 	return (
 		<header className={styles.Header}>
 			<div className={styles.gridContainer}>
-			{/*Отправляем setOpenMenu для закрытия окна при нажатия на кнопки меню*/}
+			{/*Отправляем setOpenMenu для закрытия окна при нажатии на кнопки меню*/}
 			<PopUpMenu closeMenu={setOpenMenu} style={openMenu} data={data}/>
 				
 				<Button onClick={menuClick} className={styles.menu}>
@@ -36,10 +37,12 @@ const Header = ({data, onChange, value}) => {
 					onChange={onChange}
 					value={value}
 				/>
-				<Button className={styles.headerBtnMob}/>
+				<Button className={styles.headerBtnMob}>
+					<Link className={styles.headerBtnMob__link} to="/createPost"></Link>
+				</Button>
 				
 				<Button className={styles.headerBtn}>
-					{data.interface.heading}
+					<Link className={styles.headerBtn__link} to="/createPost">{data.interface.heading}</Link>
 				</Button>
 			</div>
 		</header>

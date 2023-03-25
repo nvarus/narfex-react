@@ -14,19 +14,21 @@
 .headerBtn
 	padding: 0 15px
 	background: #DDE4F7
-	color: #224DCF
 	border: none
 	height: 40px
 	border-radius: 15px
-	@extend %flex-center-center
 	font-size: 1.2rem
 	font-weight: 600
+.headerBtn__link
+	@extend %flex-center-center
 	cursor: pointer
+	color: #224DCF
+	text-decoration: none
+.headerBtn__link:before
+	content: url("../../4rectangle.svg")
+	margin-right: 5px
+	display: flex
 
-	&:before
-		content: url("../../4rectangle.svg")
-		margin-right: 5px
-		display: flex
 .headerBtnMob
 	background: white
 	padding: 0 2%
@@ -34,11 +36,11 @@
 	height: 40px
 	display: none
 	cursor: pointer
-
-	&:before
-		content: url("../../4rectangle.svg")
-		margin-right: 5px
-		display: flex
+.headerBtnMob__link
+	content: url("../../4rectangle.svg")
+	margin-right: 5px
+	display: flex
+	text-decoration: none
 
 .nav
 	display: flex

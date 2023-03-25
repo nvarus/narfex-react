@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.headerBtn, .selectLang {
+.headerBtn__link, .selectLang {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -18,17 +18,21 @@
 .headerBtn {
   padding: 0 15px;
   background: #DDE4F7;
-  color: #224DCF;
   border: none;
   height: 40px;
   border-radius: 15px;
   font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer; }
-  .headerBtn:before {
-    content: url("../../4rectangle.svg");
-    margin-right: 5px;
-    display: flex; }
+  font-weight: 600; }
+
+.headerBtn__link {
+  cursor: pointer;
+  color: #224DCF;
+  text-decoration: none; }
+
+.headerBtn__link:before {
+  content: url("../../4rectangle.svg");
+  margin-right: 5px;
+  display: flex; }
 
 .headerBtnMob {
   background: white;
@@ -37,10 +41,12 @@
   height: 40px;
   display: none;
   cursor: pointer; }
-  .headerBtnMob:before {
-    content: url("../../4rectangle.svg");
-    margin-right: 5px;
-    display: flex; }
+
+.headerBtnMob__link {
+  content: url("../../4rectangle.svg");
+  margin-right: 5px;
+  display: flex;
+  text-decoration: none; }
 
 .nav {
   display: flex;
