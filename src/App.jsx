@@ -8,9 +8,12 @@ import CreatePost from "./sections/CreatePost/CreatePost.jsx";
 
 const App = ({data}) => {  // data - весь объект, включающий все языки
 	
+	// создание нового поста
+	const [post, setPost] = useState(data);
+	
 	// Выбор языка в хедере и переключение локализации всего сайта
 	const [langSelect, setLangSelect] = useState('eu');
-	const [changeLocal, setChangeLocal] = useState(data.eu);
+	const [changeLocal, setChangeLocal] = useState(post.eu);
 	// функцию selectLanguage отправляем в SelectLang.jsx и ожидаем возврата в select
 	// значение измененной раскладки от тега select option
 	const selectLanguage = (select) => {
@@ -19,7 +22,6 @@ const App = ({data}) => {  // data - весь объект, включающий
 		// получаем в changeLocal объект на выбранном языке
 		setChangeLocal(data[select])
 	}
-	
 	const [IDCard, setIDCard] = useState('');
 	return (
 		<div className="App">
@@ -32,7 +34,7 @@ const App = ({data}) => {  // data - весь объект, включающий
 			<Routes>
 				<Route path="/" element={<Home setID={setIDCard} data={changeLocal}/>}/>
 				<Route path="/gallery" element={<Gallery/>}/>
-				<Route path="/createPost" element={<CreatePost/>}/>
+				<Route path="/createPost" element={<CreatePost post={post} setPost={setPost}/>}/>
 			</Routes>
 		</div>
 	);

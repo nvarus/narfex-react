@@ -1,2 +1,20 @@
 .CreatePost {
   width: 100%; }
+  .CreatePost > h2 {
+    color: #224DCF;
+    text-align: center; }
+
+.btnWrap {
+  width: 100%; }
+
+.button {
+  width: 70%;
+  margin: 40px auto;
+  display: block;
+  background-color: #224DCF;
+  color: white;
+  font-size: 23px;
+  line-height: 28px;
+  border: none;
+  padding: 8px;
+  border-radius: 5px; }
