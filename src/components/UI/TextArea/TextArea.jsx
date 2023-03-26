@@ -3,16 +3,14 @@ import styles from './TextArea.module.css';
 
 const TextArea = ({children, name, getValue, className, ...props}) => {
 	const [value, setValue] = useState('');
-	const change = (e) => {
-		setValue(e.target.value)
-		getValue(value)
-	}
+	
+	getValue(value)
 	return (
 		<div className={styles.TextArea}>
 			<textarea
 				placeholder={name}
 				value={value}
-				onChange={change}
+				onChange={e => setValue(e.target.value)}
 				className={className}
 				{...props}
 			>

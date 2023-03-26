@@ -1,0 +1,29 @@
+@import ../../sass/templates
+
+.RecentCards
+	height: 260px
+	width: 100%
+	display: flex
+	.RecentCards__img
+		overflow: hidden
+		border-radius: 10px 0 0 10px
+		flex: 0 0 260px
+		height: 100%
+		margin-right: 30px
+	.RecentCards__img>img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center
+
+	.RecentCards__info
+		padding: 20px 0
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+	Button
+		+button(#5080E4, white, 1)
+	.RecentCards__title
+		color: black
+		font-size: 26px
+		font-weight: 600

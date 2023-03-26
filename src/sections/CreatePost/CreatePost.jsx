@@ -4,13 +4,13 @@ import Button from "../../components/UI/Button/Button.jsx";
 import Input from "../../components/UI/Input/Input.jsx";
 import TextArea from "../../components/UI/TextArea/TextArea.jsx";
 
-const CreatePost = ({post, setPost}) => {
+const CreatePost = ({post, setPost, data}) => {
 	const newPost = {
 		authorID: 1,
 		date: "2023-03-26",
-		img: "https://avatarko.ru/img/kartinka/19/zhivotnye_kot_18034.jpg",
-		previewText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eligendi labore veniam.",
-		theme: "Test",
+		img: "",
+		previewText: "",
+		theme: "",
 		title: "",
 		content: [
 			{
@@ -25,7 +25,8 @@ const CreatePost = ({post, setPost}) => {
 				type: "image",
 				value: "https://www.factroom.ru/wp-content/uploads/2015/11/1636.jpg"
 			},
-			]
+			],
+		comments: [],
 	}
 
 	
@@ -40,49 +41,49 @@ const CreatePost = ({post, setPost}) => {
 	return (
 		<form className={styles.CreatePost}>
 			<h2>Add a new event</h2>
-			<div className={styles.mainData}>
-				<Input className={styles.input__theme}
+			<div>
+				<Input
 				       type={"text"}
-				       name={"Specify the event topic"}
+				       name={data.interface.formTheme}
 				       getValue={value => newPost.theme = value}
 				/>
-				<Input className={styles.input__title}
+				<Input
 					type={"text"}
-					name={"Specify the title"}
+					name={data.interface.formTitle}
 					getValue={value => newPost.title = value}
 				/>
-				<Input className={styles.input__theme}
+				<Input
 				       type={"text"}
-				       name={"Add a link to the photo"}
+				       name={data.interface.formImg}
 				       getValue={value => newPost.img = value}
 				/>
-				<TextArea   className={styles.input__previewText}
-								name={"Write a short description of the event"}
+				<TextArea
+								name={data.interface.formPreview}
 				            getValue={value => newPost.previewText = value}
 								rows={4}
 				/>
 			</div>
 			<h2>Content</h2>
-			<div className={styles.contentData}>
-				<Input className={styles.input__contentTitle}
+			<div>
+				<Input
 				       type={"text"}
-				       name={"Specify the title"}
+				       name={data.interface.contentTitle}
 				       getValue={value => newPost.content[0].value = value}
 				/>
-				<TextArea   className={styles.input__previewText}
-				            name={"Enter the text of the message here"}
+				<TextArea
+				            name={data.interface.contentParagraph}
 				            getValue={value => newPost.content[1].value = value}
 				            rows={10}
 				/>
-				<Input className={styles.input__contentTitle}
+				<Input
 				       type={"text"}
-				       name={"Add a link to the photo"}
+				       name={data.interface.contentPhoto}
 				       getValue={value => newPost.content[2].value = value}
 				/>
 			</div>
 			<div className={styles.btnWrap}>
 			<Button className={styles.button} onClick={clickBtn}>
-				Creat post
+				{data.interface.formBtn}
 			</Button>
 			</div>
 		</form>

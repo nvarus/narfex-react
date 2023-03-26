@@ -9,7 +9,7 @@ const CardsHero = ({id, setID, cardButton, ...props}) => {
 		<div className={styles.card}>
 			<img src={props.img} className={styles.card__img}/>
 			<div className={styles.card__info}>
-				<Link to="/paper">
+				<Link to="/post">
 					<Button onClick={() => setID(id)}>
 						{cardButton}
 					</Button>

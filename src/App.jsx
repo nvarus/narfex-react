@@ -5,6 +5,8 @@ import Header from "./sections/Header/Header.jsx";
 import Home from "./sections/Home/Home.jsx";
 import Gallery from "./sections/Gallery/Gallery.jsx";
 import CreatePost from "./sections/CreatePost/CreatePost.jsx";
+import Post from "./sections/Post/Post.jsx";
+import Comments from "./sections/Comments/Comments.jsx";
 
 const App = ({data}) => {  // data - весь объект, включающий все языки
 	
@@ -33,8 +35,10 @@ const App = ({data}) => {  // data - весь объект, включающий
 			
 			<Routes>
 				<Route path="/" element={<Home setID={setIDCard} data={changeLocal}/>}/>
+				<Route path="/post" element={<Post id={+IDCard} data={changeLocal}/>}/>
 				<Route path="/gallery" element={<Gallery/>}/>
-				<Route path="/createPost" element={<CreatePost post={post} setPost={setPost}/>}/>
+				<Route path="/createPost" element={<CreatePost post={post} setPost={setPost} data={changeLocal}/>}/>
+				<Route path="/comments" element={<Comments id={+IDCard} data={changeLocal}/>}/>
 			</Routes>
 		</div>
 	);

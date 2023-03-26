@@ -1,0 +1,12 @@
+.TextArea {
+  width: 100%;
+  margin: 10px;
+  display: flex; }
+  .TextArea > textarea {
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #224DCF;
+    font-size: 20px;
+    line-height: 26px;
+    color: dimgray;
+    width: 90%; }

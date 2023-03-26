@@ -50,7 +50,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://shutok.ru/uploads/posts/2022-09/1663774112_shutok.ru.5.jpg",
@@ -101,7 +102,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://s1.1zoom.ru/b5155/217/Men_Bicycle_Cycle_race_Helmet_522123_2048x1152.jpg",
@@ -152,7 +154,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://imageio.forbes.com/specials-images/imageserve/1075599562/0x0.jpg?format=jpg&amp;width=1200",
@@ -203,7 +206,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://fastly.4sqi.net/img/general/600x600/415411_LaSchFAv48DD8NjCuiHurblt3X5LBxjTjFF8nUUIf3s.jpg",
@@ -254,7 +258,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://online-kassa.ru/wp-content/uploads/2018/10/Sistema-avtomatizatsii-biznes-protsessov-1.jpg",
@@ -305,7 +310,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
+				],
+				comments: [],
 				
 			},
 			{
@@ -357,8 +363,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
-				
+				],
+				comments: [],
 			},
 			{
 				img: "https://spclub23.ru/files/9a5/9a51e6d1cc74566c0455b75fd0b6807f.jpg",
@@ -409,9 +415,8 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
-				
-				
+				],
+				comments: [],
 			},
 			{
 				img: "https://thenational-the-national-prod.cdn.arcpublishing.com/resizer/1rnsN7xz5fPZTV34yvafF7H7yDc=/1440x810/filters:format(png):quality(70):focal(402x121:412x131)/cloudfront-eu-central-1.images.arcpublishing.com/thenational/BQU5TAMDINGHHJRW43Q3SJPIQ4.png",
@@ -462,7 +467,15 @@ const data = {
 						type: "paragraph",
 						value: "Wanted favour rank guest lose songs fine did prevent sight believing four mirth. Rendered position weddings avoid said secure. Humanity burst out improve delight chiefly another seemed added branched shew pain avoid enjoyment gave eyes. Plenty attacks then theirs rest engrossed. Continuing intention anxious dashwood led any waited then country fully hastened"
 					},
-				]
+				],
+				comments: [
+					{id: 1, date: "2022-11-03", body: "It is certainly the most famous placeholder text even if there are" +
+							" different versions distinguishable from the order in which the Latin words are repeated."},
+					{id: 2, date: "2022-12-15", body: "It is certainly the most famous placeholder text even if there are" +
+							" different versions distinguishable from the order in which the Latin words are repeated."},
+					{id: 3, date: "2022-12-18", body: "It is certainly the most famous placeholder text even if there are" +
+							" different versions distinguishable from the order in which the Latin words are repeated."},
+				],
 			},
 		
 		],
@@ -516,6 +529,15 @@ const data = {
 			minute: "minutes",
 			heading: "To create",
 			menu: "Menu",
+			formTheme: "Specify the event topic",
+			formTitle: "Specify the title",
+			formImg: "Add a link to the photo",
+			formPreview: "Write a short description of the event",
+			contentTitle: "Specify the title",
+			contentParagraph: "Enter the text of the message here",
+			contentPhoto: "Add a link to the photo",
+			formBtn: "Creat post",
+			
 		},
 		dateLocale: "en-GB",
 	},
@@ -570,7 +592,8 @@ const data = {
 						type: "paragraph",
 						value: "Желанный гость ранга фаворита проигрывал песни, которые прекрасно мешали зрению верить в веселье. Отображаемое положение позволяет избежать указанного безопасного положения. Человечество вспыхнуло от восторга, главным образом, другой, казалось, добавленный разветвленный знак боли, избегающий наслаждения, подарил глаза. Множество атак, затем их отдых поглощен. Продолжая намерение, озабоченный Дэшвуд повел любого за собой, затем страна полностью поторопилась"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://shutok.ru/uploads/posts/2022-09/1663774112_shutok.ru.5.jpg",
@@ -621,7 +644,8 @@ const data = {
 						type: "paragraph",
 						value: "Желанный гость ранга фаворита проигрывал песни, которые прекрасно мешали зрению верить в веселье. Отображаемое положение позволяет избежать указанного безопасного положения. Человечество вспыхнуло от восторга, главным образом, другой, казалось, добавленный разветвленный знак боли, избегающий наслаждения, подарил глаза. Множество атак, затем их отдых поглощен. Продолжая намерение, озабоченный Дэшвуд повел любого за собой, затем страна полностью поторопилась"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://s1.1zoom.ru/b5155/217/Men_Bicycle_Cycle_race_Helmet_522123_2048x1152.jpg",
@@ -672,7 +696,8 @@ const data = {
 						type: "paragraph",
 						value: "Желанный гость ранга фаворита проигрывал песни, которые прекрасно мешали зрению верить в веселье. Отображаемое положение позволяет избежать указанного безопасного положения. Человечество вспыхнуло от восторга, главным образом, другой, казалось, добавленный разветвленный знак боли, избегающий наслаждения, подарил глаза. Множество атак, затем их отдых поглощен. Продолжая намерение, озабоченный Дэшвуд повел любого за собой, затем страна полностью поторопилась"
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://imageio.forbes.com/specials-images/imageserve/1075599562/0x0.jpg?format=jpg&amp;width=1200",
@@ -722,7 +747,8 @@ const data = {
 						type: "paragraph",
 						value: "Задача организации, в особенности же постоянный количественный рост и сфера нашей активности, в своём классическом представлении, допускает внедрение позиций, занимаемых участниками в отношении поставленных задач. А ещё диаграммы связей своевременно верифицированы."
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://fastly.4sqi.net/img/general/600x600/415411_LaSchFAv48DD8NjCuiHurblt3X5LBxjTjFF8nUUIf3s.jpg",
@@ -772,7 +798,8 @@ const data = {
 						type: "paragraph",
 						value: "Картельные сговоры не допускают ситуации, при которой активно развивающиеся страны третьего мира, превозмогая сложившуюся непростую экономическую ситуацию, описаны максимально подробно. Для современного мира сложившаяся структура организации предоставляет широкие возможности для инновационных методов управления процессами."
 					},
-				]
+				],
+				comments: [],
 			},
 			{
 				img: "https://online-kassa.ru/wp-content/uploads/2018/10/Sistema-avtomatizatsii-biznes-protsessov-1.jpg",
@@ -823,7 +850,8 @@ const data = {
 						type: "paragraph",
 						value: "Разнообразный и богатый опыт говорит нам, что перспективное планирование играет важную роль в формировании кластеризации усилий. Приятно, граждане, наблюдать, как элементы политического процесса, инициированные исключительно синтетически, функционально разнесены на независимые элементы."
 					},
-				]
+				],
+				comments: [],
 				
 			},
 			{
@@ -875,7 +903,8 @@ const data = {
 						type: "paragraph",
 						value: "Курс на социально-ориентированный национальный проект даёт нам право принимать самостоятельные решения"
 					},
-				]
+				],
+				comments: [],
 				
 			},
 			{
@@ -927,7 +956,8 @@ const data = {
 						type: "paragraph",
 						value: "Лишь элементы политического процесса призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены. Как уже неоднократно упомянуто, элементы политического процесса, превозмогая сложившуюся непростую экономическую ситуацию, функционально разнесены на независимые элементы. Лишь тщательные исследования конкурентов, превозмогая сложившуюся непростую экономическую ситуацию, разоблачены. В целом, конечно, постоянный количественный рост и сфера нашей активности предоставляет широкие возможности для переосмысления внешнеэкономических политик. Банальные, но неопровержимые выводы, а также стремящиеся вытеснить традиционное производство, нанотехнологии призывают нас к новым свершениям, которые, в свою очередь, должны быть разоблачены."
 					},
-				]
+				],
+				comments: [],
 				
 				
 			},
@@ -980,7 +1010,8 @@ const data = {
 						type: "paragraph",
 						value: "Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: глубокий уровень погружения позволяет выполнить важные задания по разработке стандартных подходов. Господа, курс на социально-ориентированный национальный проект предопределяет высокую востребованность системы массового участия."
 					},
-				]
+				],
+				comments: [],
 			},
 		
 		],
@@ -1034,6 +1065,14 @@ const data = {
 			minute: "minutes",
 			heading: "Создать",
 			menu: "Меню",
+			formTheme: "Укажите тему события",
+			formTitle: "Укажите название",
+			formImg: "Добавьте ссылку на фотографию",
+			formPreview: "Напишите краткое описание события",
+			contentTitle: "Добавьте заголовок",
+			contentParagraph: "Введите текст основного сообщения",
+			contentPhoto: "Добавьте ссылку на фотографию",
+			formBtn: "Создать",
 		},
 		dateLocale: "ru-RU",
 		

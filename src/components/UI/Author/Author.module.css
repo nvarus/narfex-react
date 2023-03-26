@@ -1,0 +1,20 @@
+.author {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .author .author__avatar {
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-right: 8px; }
+    .author .author__avatar img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .author .author__name {
+    font-weight: 600; }
+  .author .author__ago {
+    margin-left: 15px;
+    color: gray; }

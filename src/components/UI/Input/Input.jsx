@@ -3,17 +3,17 @@ import styles from './Input.module.css';
 
 const Input = ({type, name, getValue, className, ...props}) => {
 	const [value, setValue] = useState('');
-	const change = (e) => {
-		setValue(e.target.value)
-		getValue(value)
-	}
+
+	
+		
+	getValue(value)
 	return (
 		<div className={styles.Input}>
 			<input
 				placeholder={name}
 				type={type}
 				value={value}
-				onChange={change}
+				onChange={e => setValue(e.target.value)}
 				className={className}
 				{...props}
 			/>
