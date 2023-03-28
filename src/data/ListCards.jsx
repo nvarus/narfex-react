@@ -469,11 +469,11 @@ const data = {
 					},
 				],
 				comments: [
-					{id: 1, date: "2022-11-03", body: "It is certainly the most famous placeholder text even if there are" +
+					{date: "2022-11-03T18:00", body: "It is certainly the most famous placeholder text even if there are" +
 							" different versions distinguishable from the order in which the Latin words are repeated."},
-					{id: 2, date: "2022-12-15", body: "It is certainly the most famous placeholder text even if there are" +
+					{date: "2022-12-15T18:35", body: "It is certainly the most famous placeholder text even if there are" +
 							" different versions distinguishable from the order in which the Latin words are repeated."},
-					{id: 3, date: "2022-12-18", body: "It is certainly the most famous placeholder text even if there are" +
+					{date: "2022-12-18T10:15", body: "It is certainly the most famous placeholder text even if there are" +
 							" different versions distinguishable from the order in which the Latin words are repeated."},
 				],
 			},
@@ -537,6 +537,10 @@ const data = {
 			contentParagraph: "Enter the text of the message here",
 			contentPhoto: "Add a link to the photo",
 			formBtn: "Creat post",
+			commNoComments: "No comments found!",
+			commFormPlaceholder: "Write your comment here",
+			commFormButton: "Create a comment",
+			commListButton: "Delete",
 			
 		},
 		dateLocale: "en-GB",
@@ -1073,6 +1077,10 @@ const data = {
 			contentParagraph: "Введите текст основного сообщения",
 			contentPhoto: "Добавьте ссылку на фотографию",
 			formBtn: "Создать",
+			commNoComments: "Комментарии не найдены",
+			commFormPlaceholder: "Напишите здесь ваш комментарий",
+			commFormButton: "Создать комментарий",
+			commListButton: "Удалить",
 		},
 		dateLocale: "ru-RU",
 		

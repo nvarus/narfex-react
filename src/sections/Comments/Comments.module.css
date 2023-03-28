@@ -1,2 +1,32 @@
 .Comments {
   width: 100%; }
+
+.CommentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #224DCF;
+  margin: 10px;
+  padding: 10px; }
+  .CommentItem.CommentItem__content {
+    margin-right: 20px; }
+    .CommentItem.CommentItem__content > strong {
+      color: #224DCF; }
+    .CommentItem.CommentItem__content > p {
+      font-size: 18px;
+      margin: 5px 0; }
+
+.CommentItem__btn {
+  border: 2px solid #224DCF;
+  border-radius: 5px;
+  color: #224DCF;
+  background: white;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 5px; }
+  .CommentItem__btn:hover {
+    color: white;
+    background: #224DCF; }
+
+.CommentForm {
+  padding: 10px; }

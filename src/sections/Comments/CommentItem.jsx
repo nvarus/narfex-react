@@ -2,28 +2,31 @@ import React from 'react';
 import styles from "./Comments.module.css"
 import Button from "../../components/UI/Button/Button.jsx";
 
-const CommentItem = (props) => {
+const CommentItem = ({data, ...props}) => {
 	
 	let date = new Date(props.comm.date)
-	let localDate = date.toLocaleDateString("ru", {
+	let localDate = date.toLocaleDateString(data.dateLocale, {
 		day: "2-digit",
 		month: "long",
-		year: "numeric"
+		year: "numeric",
+		hour: "2-digit",
+		minute: "2-digit",
 	});
 	
-	console.log(props.comm)
+	
 	return (
 		
 		<div className={styles.CommentItem}>
 			<div className={styles.CommentItem__content}>
 				<strong>{props.number}. {localDate}</strong>
+				<p>
+					{props.comm.body}
+				</p>
 			</div>
-			<div>
-				{props.comm.body}
-			</div>
-			<div className={styles.comment__btn}>
-				<Button>
-					Удалить
+			
+			<div className={styles.CommentItem__btnWrap}>
+				<Button onClick={() => props.remove(props.comm)} className={styles.CommentItem__btn}>
+					{data.interface.commListButton}
 				</Button>
 			</div>
 			
